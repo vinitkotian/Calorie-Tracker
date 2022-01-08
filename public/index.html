@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css"></link>
+    <script  src="./index.js"></script>
+
+    <!--Icon Imports-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    
+    
+    <title>CalTrack</title>
+  </head>
+  <body>
+
+    <!--Top Navigation Bar-->
+    <nav>
+    <div class="navBar-container">
+      <div class="nav-item1">
+        <i class="fas fa-weight fa-3x"></i>
+      </div>
+      <div class="nav-item2">
+        CalTrack
+      </div>
+      <div class="blank-block"></div>
+      <div class="nav-item3" >
+        <div id='blank-grid-column '></div>
+        <h3 id='greeting' class='greeting'>Hi Anonymous!</h3>
+        <button class="calTrackBtnBlack" onclick='openLogin()'>Log In</button>
+        <button class="calTrackBtnBlack" onclick='openSignUp()'>Sign Up</button>
+      </div>
+    </div>
+    </nav>
+
+    <div class='modal-backdrop' id='modal-backdrop'>
+      <div class='login-modal-form'>
+        <span class='form-headings'>Login</span>
+        <img src='./icons8-close.svg' id='close-login' class='close-modal-icon' onclick="closeLogin()"/>
+        <div>
+          <div class='login-form-gridcontainer'>
+            <input type='email' id='userName' name='username' value='' class='input-login'  placeholder="Username" autocomplete="false"/>
+            <input type='password' id='password' value='' class='input-login' placeholder="Password" autocomplete="false"/>
+            <input type="submit"  class='calTrackBtnBlack input-login submit' onclick="handleLoginSubmit()"/>
+          </div>
+        </div>
+      </div>
+      <div class='signup-modal-form'>
+        <span class='form-headings'>Sign Up</span>
+        <img src='./icons8-close.svg' id='close-sign-up' class='close-modal-icon' onclick="closeSignUp()"/>
+      </div>
+    </div>
+  </body>
+</html>

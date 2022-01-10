@@ -1,0 +1,109 @@
+.calorie-visuals {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10rem 10rem 10rem;
+  column-gap: 10rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.carb-chart {
+  border-radius: 50%;
+  border: rgb(29 146 14) dashed 0.5rem;
+  color: rgb(29 146 14);
+  height: 10rem;
+  width: 10rem;
+  padding: 3rem;
+}
+
+.protein-chart {
+  border-radius: 50%;
+  border: rgb(206 37 14 / 57%) dashed 0.5rem;
+  color: rgb(206 37 14 / 57%);
+  height: 10rem;
+  width: 10rem;
+  padding: 3rem;
+}
+
+.fat-chart {
+  border-radius: 50%;
+  border: rgb(150 128 126) dashed 0.5rem;
+  color: rgb(150 128 126);
+  height: 10rem;
+  width: 10rem;
+  padding: 3rem;
+}
+
+.calorie-statistics-view {
+  display: grid;
+  grid-template-rows: 5rem 12rem 5rem;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.chart-heading {
+  font-size: 2rem !important;
+  margin: 1rem auto;
+}
+
+.calorie-visuals-text {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.enter-meals-btn {
+  width: 50% !important;
+  margin: 3rem auto auto 13rem;
+  box-shadow: 0.1rem 0.1rem 5rem 0.1rem rgb(163, 162, 162);
+}
+
+.enter-meals-btn:active {
+  box-shadow: none;
+}
+
+.modal-backdrop-calorie-visuals {
+  background-color: rgba(51, 47, 47, 0.6);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content-calorie-form-paper {
+  position: fixed;
+  left: 35%;
+  top: 20%;
+  width: 30rem;
+  min-height: 10rem;
+  background: white;
+  border-radius: 0.3rem;
+}
+
+.modal-content-calorie-form-grid {
+  display: grid;
+  grid-template-rows: 4rem 3rem 5rem 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#heading-macros-form {
+  margin: auto;
+  font: 1.8rem Roboto;
+}
+
+.submit-macros-form-btn {
+  width: 20rem !important;
+}
+
+.meal-search-box {
+  width: 20rem !important;
+  display: grid;
+  grid-template-columns: 15rem 4.5rem;
+  column-gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}

@@ -43,5 +43,18 @@ const postAuthHandle = () => {
   if (userName.match(/@+/)) {
     userName = userName.substring(0, userName.match(/@+/).index);
   }
+  // document.getElementById("request-login").style.visibility = "hidden";
   document.getElementById("greeting").innerHTML = `Hi, ${userName}!`;
+  document.getElementById("calorie-statistics-view").style.visibility =
+    "visible";
+};
+
+const enterMacros = () => {
+  document.getElementById("modal-backdrop-calorie-visuals").style.display =
+    "block";
+};
+
+const closeMacrosForm = () => {
+  document.getElementById("modal-backdrop-calorie-visuals").style.display =
+    "none";
 };
